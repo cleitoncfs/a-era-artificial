@@ -4,6 +4,7 @@ import Historia from "./components/Historia";
 import Autor from "./components/Autor";
 import Conclusao from "./components/Conclusao";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
     const [theme, setTheme] = useState(() => {
@@ -20,17 +21,20 @@ function App() {
     };
 
     return (
-        <main className="container">
-            <button className="theme-toggle" onClick={toggleTheme}>
-                {theme === "light" ? "🌙 Modo Escuro" : "☀️ Modo Claro"}
-            </button>
+        <>
+            <main className="container">
+                <button className="theme-toggle" onClick={toggleTheme}>
+                    {theme === "light" ? "🌙 Modo Escuro" : "☀️ Modo Claro"}
+                </button>
 
-            <HeroSection />
-            <Historia />
-            <Autor />
-            <Conclusao />
-            <Footer />
-        </main>
+                <HeroSection />
+                <Historia />
+                <Autor />
+                <Conclusao />
+                <Footer />
+            </main>
+            <ScrollToTop />
+        </>
     );
 }
 
