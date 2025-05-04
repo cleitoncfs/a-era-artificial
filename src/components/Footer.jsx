@@ -4,8 +4,8 @@ export default function Footer() {
     return (
         <footer className="footer">
             <p className="footer-copyright">
-                © {new Date().getFullYear()} Divulgação do livro &quot;A era
-                Digital&quot; - Todos os direitos reservados
+                © {new Date().getFullYear()} Divulgação do livro &quot;A Era
+                Artificial&quot; - Todos os direitos reservados
             </p>
             <p className="footer-credits">
                 Desenvolvido por{" "}
